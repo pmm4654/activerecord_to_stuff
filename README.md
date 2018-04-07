@@ -24,12 +24,10 @@ Or install it yourself as:
 
 ```ruby
 table_headers = [:first_name, :last_name, :email]
-User.all.to_table(table_headers) # creates an html safe table
-```
+user_table = User.all.to_table(table_headers) # creates an html safe table
 
-```ruby
 ### To render in a view
-<%= User.all.to_table([:first_name, :last_name, :email]) %>
+<%= user_table %>
 ```
 
 ## Development
